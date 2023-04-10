@@ -1,0 +1,110 @@
+[
+  {
+    "id": "job001",
+    "companyLogo": "Icons/google.png",
+    "jobTitle": "Technical Database Engineer",
+    "companyName": "Google LLC",
+    "remoteOrOnsite": "Remote",
+    "location": "New York, USA",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "100k-150k USD",
+    "jobDescription": "We are seeking a highly skilled software engineer to join our dynamic team. The ideal candidate will have experience in web development and be passionate about creating innovative software solutions.",
+    "jobResponsibility": "Develop and maintain web applications using modern front-end and back-end technologies",
+    "educationalRequirements": "Bachelor's or Master's degree in Computer Science or related field",
+    "experiences": "3+ years of relevant experience",
+    "contactInformation": {
+      "phone": "+1 (123) 456-7890",
+      "email": "jobs@company1.com"
+    }
+  },
+  {
+    "id": "job002",
+    "companyLogo": "Icons/netflix.png",
+    "jobTitle": "Senior Product Designer",
+    "companyName": "Netflix",
+    "remoteOrOnsite": "Onsite",
+    "location": "San Francisco, USA",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "90k-110k USD",
+    "jobDescription": "We are looking for a talented UI/UX designer to join our team and help us create beautiful and intuitive user experiences.",
+    "jobResponsibility": "Design and prototype user interfaces for web and mobile applications",
+    "educationalRequirements": "Bachelor's or Master's degree in Graphic Design, Interaction Design, or related field",
+    "experiences": "3+ years of relevant experience",
+    "contactInformation": {
+      "phone": "+1 (123) 456-7890",
+      "email": "jobs@company2.com"
+    }
+  },
+  {
+    "id": "job003",
+    "companyLogo": "Icons/tesla.png",
+    "jobTitle": "Software Engineer",
+    "companyName": "Tesla",
+    "remoteOrOnsite": "Remote",
+    "location": "London, UK",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "80k-100k USD",
+    "jobDescription": "We are seeking a talented and experienced Marketing Manager to join our team and help us grow our brand and drive customer acquisition.",
+    "jobResponsibility": "Develop and execute marketing campaigns across a variety of channels",
+    "educationalRequirements": "Bachelor's or Master's degree in Marketing or related field",
+    "experiences": "5+ years of relevant experience",
+    "contactInformation": {
+      "phone": "+44 (0) 1234 567890",
+      "email": "jobs@company3.com"
+    }
+  },
+  {
+    "id": "job004",
+    "companyLogo": "Icons/google.png",
+    "jobTitle": "Marketing Manager",
+    "companyName": "Google LLC",
+    "remoteOrOnsite": "Remote",
+    "location": "London, UK",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "80k-100k USD",
+    "jobDescription": "We are seeking a talented and experienced Marketing Manager to join our team and help us grow our brand and drive customer acquisition.",
+    "jobResponsibility": "Develop and execute marketing campaigns across a variety of channels",
+    "educationalRequirements": "Bachelor's or Master's degree in Marketing or related field",
+    "experiences": "5+ years of relevant experience",
+    "contactInformation": {
+      "phone": "+44 (0) 1234 567890",
+      "email": "jobs@company3.com"
+    }
+  },
+  {
+    "id": "job005",
+    "companyLogo": "Icons/microsoft.png",
+    "jobTitle": "Data Scientist",
+    "companyName": "Microsoft Corporation",
+    "remoteOrOnsite": "Onsite",
+    "location": "San Francisco, CA",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "120k - $140k USD",
+    "jobDescription": "We are looking for a data scientist with a passion for solving complex problems.",
+    "jobResponsibility": "Analyze large datasets and develop predictive models.",
+    "educationalRequirements": "Master's or PhD in Computer Science, Statistics, or related field.",
+    "experiences": "At least 5 years of experience in data science.",
+    "contactInformation": {
+      "phone": "555-5678",
+      "email": "jobs@xyzcorp.com"
+    }
+  },
+  {
+    "id": 3,
+    "companyLogo": "Icons/alibaba.png",
+    "jobTitle": "Product Manager",
+    "companyName": "Alibaba Group",
+    "remoteOrOnsite": "Remote",
+    "location": "China",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "$130,000 - $150,000",
+    "jobDescription": "We are seeking a skilled product manager to lead our product development efforts.",
+    "jobResponsibility": "Define product strategy and roadmap, gather customer feedback and work with engineering team to prioritize features.",
+    "educationalRequirements": "Bachelor's or Master's degree in Business, Computer Science, or related field.",
+    "experiences": "At least 7 years of experience in product management.",
+    "contactInformation": {
+      "phone": "555-9012",
+      "email": "jobs@pqrindustries.com"
+    }
+  }
+]
