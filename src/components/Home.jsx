@@ -19,7 +19,7 @@ const Home = () => {
         <div className=" px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 relative md:flex">
           <div className="md:w-1/2">
             <h2 className="font-extrabold text-[50px] md:text-[80px]">
-              One Step Closer To Your{" "}
+              One Step Closer To Your
               <span className="text-blue-600">Dream Job</span>
             </h2>
             <p className="text-gray-500">
