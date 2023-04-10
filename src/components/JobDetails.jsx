@@ -33,7 +33,7 @@ const JobDetails = () => {
 
   return job ? (
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-      <div className="flex gap-4 mt-32">
+      <div className="md:flex gap-4 md:mt-32">
         <div className="w-3/5">
           <p className="text-gray-500 text-base mb-6">
             <span className="text-black font-extrabold">Job Description: </span>{" "}
@@ -42,38 +42,56 @@ const JobDetails = () => {
           <p className="text-gray-500 text-base mb-6">
             <span className="text-black font-extrabold">
               Job Responsibility:
-            </span>
+            </span>{" "}
             {job.jobResponsibility}
           </p>
-          <h2>Educational Requirements:</h2>
-          <p>{job.educationalRequirements}</p>
-          <h2>Experiences: </h2>
-          <p>{job.experiences}</p>
+          <h2 className="text-black mb-4 font-extrabold">
+            Educational Requirements:
+          </h2>
+          <p className="text-gray-500 text-base mb-6">
+            {job.educationalRequirements}
+          </p>
+          <h2 className="text-black mb-4 font-extrabold">Experiences: </h2>
+          <p className="text-gray-500 text-base mb-6">{job.experiences}</p>
         </div>
 
-        <div className="w-2/5">
-          <div>
-            <h2>Job Details</h2>
-            <hr />
-            <p>
-              <span>Salary: </span>
+        <div className="md:w-2/5">
+          <div className="bg-cyan-100 p-7 rounded">
+            <h2 className="font-extrabold text-xl mb-6">Job Details</h2>
+            <hr className="mb-6" />
+            <p className="text-gray-500 text-base">
+              <span className="font-bold text-sm text-black">Salary: </span>
               {job.salary} (Per Month)
             </p>
-            <p>
-              <span>Job Title: </span>
+            <p className="text-gray-500 text-base ">
+              <span className="font-bold text-sm text-black">Job Title: </span>
               {job.jobTitle}
             </p>
-            <h2>Contact Information</h2>
-            <p>
-              <span>Phone: </span>
+            <h2 className="font-extrabold mt-8 text-xl mb-6">
+              Contact Information
+            </h2>
+            <hr className="mb-6" />
+            <p className="text-gray-500 text-base">
+              <span className="font-bold text-sm text-black">Phone: </span>
               {job.contactInformation.phone}
             </p>
-            <p>
-              <span>Address: </span>
+            <p className="text-gray-500 text-base">
+              <span className="font-bold text-sm text-black">Email: </span>
+              {job.contactInformation.email}
+            </p>
+            <p className="text-gray-500 text-base">
+              <span className="font-bold text-sm text-black">Address: </span>
               {job.location}
             </p>
           </div>
-          <button onClick={jobManagement}>Apply Now</button>
+          <div className="text-center">
+            <button
+              className="h-[65px] w-full mt-6 rounded text-white font-semibold bg-blue-500 "
+              onClick={jobManagement}
+            >
+              Apply Now
+            </button>
+          </div>
         </div>
       </div>
     </div>
