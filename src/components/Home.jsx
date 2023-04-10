@@ -49,9 +49,13 @@ const Home = () => {
         </div>
         <div>
           <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {jobCategoryList.map((jobCategory) => (
-              <JobCategoryCard key={jobCategory.id} jobCategory={jobCategory} />
-            ))}
+            {jobCategoryList &&
+              jobCategoryList.map((jobCategory) => (
+                <JobCategoryCard
+                  key={jobCategory.id}
+                  jobCategory={jobCategory}
+                />
+              ))}
           </div>
         </div>
       </div>

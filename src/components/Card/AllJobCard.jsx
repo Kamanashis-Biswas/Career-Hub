@@ -1,6 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const AllJobCard = (job) => {
+const AllJobCard = ({ job }) => {
   const {
     companyLogo,
     jobTitle,
@@ -9,7 +10,10 @@ const AllJobCard = (job) => {
     fulltimeOrParttime,
     location,
     salary,
-  } = job.job;
+  } = job;
+
+  const navigate = useNavigate();
+
   return (
     <div className="">
       <div className="border rounded-xl">
@@ -33,7 +37,10 @@ const AllJobCard = (job) => {
         <p className="ml-10 mt-4 text-gray-500 font-semibold text-[20px]">
           {location} <span className="ml-6">Salary : {salary}</span>
         </p>
-        <button className="w-[157px] h-[50px] ml-10 mt-6 text-white font-semibold bg-blue-500 mb-10 rounded">
+        <button
+          onClick={() => navigate(`/details/${job.id}`)}
+          className="w-[157px] h-[50px] ml-10 mt-6 text-white font-semibold bg-blue-500 mb-10 rounded"
+        >
           View Details
         </button>
       </div>
