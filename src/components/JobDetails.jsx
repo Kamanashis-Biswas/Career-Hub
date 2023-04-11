@@ -56,33 +56,50 @@ const JobDetails = () => {
         </div>
 
         <div className="md:w-2/5">
-          <div className="bg-cyan-100 p-7 rounded">
+          <div className="bg-cyan-100 p-7 rounded-xl">
             <h2 className="font-extrabold text-xl mb-6">Job Details</h2>
             <hr className="mb-6" />
-            <p className="text-gray-500 text-base">
-              <span className="font-bold text-sm text-black">Salary: </span>
-              {job.salary} (Per Month)
-            </p>
-            <p className="text-gray-500 text-base ">
-              <span className="font-bold text-sm text-black">Job Title: </span>
-              {job.jobTitle}
-            </p>
+            <div className="flex">
+              <img src="https://i.ibb.co/M1WhDjy/doller.png" alt="" />
+              <p className="text-gray-500 text-base ml-2">
+                <span className="font-bold text-sm text-black">Salary: </span>
+                {job.salary} (Per Month)
+              </p>
+            </div>
+            <div className="flex mt-4">
+              <img src="https://i.ibb.co/27PS7QF/calender.png" alt="" />
+              <p className="text-gray-500 ml-2 text-base ">
+                <span className="font-bold text-sm text-black">
+                  Job Title:{" "}
+                </span>
+                {job.jobTitle}
+              </p>
+            </div>
             <h2 className="font-extrabold mt-8 text-xl mb-6">
               Contact Information
             </h2>
             <hr className="mb-6" />
-            <p className="text-gray-500 text-base">
-              <span className="font-bold text-sm text-black">Phone: </span>
-              {job.contactInformation.phone}
-            </p>
-            <p className="text-gray-500 text-base">
-              <span className="font-bold text-sm text-black">Email: </span>
-              {job.contactInformation.email}
-            </p>
-            <p className="text-gray-500 text-base">
-              <span className="font-bold text-sm text-black">Address: </span>
-              {job.location}
-            </p>
+            <div className="flex">
+              <img src="https://i.ibb.co/5KGYw69/phone.png" alt="" />
+              <p className="text-gray-500 ml-2 text-base">
+                <span className="font-bold text-sm text-black">Phone: </span>
+                {job.contactInformation.phone}
+              </p>
+            </div>
+            <div className="flex mt-4">
+              <img src="https://i.ibb.co/3BPVSy1/email.png" alt="" />
+              <p className="text-gray-500 ml-2 text-base">
+                <span className="font-bold text-sm text-black">Email: </span>
+                {job.contactInformation.email}
+              </p>
+            </div>
+            <div className="flex mt-4">
+              <img src="https://i.ibb.co/GFWxskj/location-2.png" alt="" />
+              <p className="text-gray-500 ml-2 text-base">
+                <span className="font-bold text-sm text-black">Address: </span>
+                {job.location}
+              </p>
+            </div>
           </div>
           <div className="text-center">
             <button

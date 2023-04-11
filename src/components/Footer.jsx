@@ -59,7 +59,7 @@ const Footer = () => {
           <hr className="mt-5 md:mt-12" />
           <div>
             <p className="mt-12 mb-10 md:mb-36 text-white">
-              @2023 CareerHub. All Rights Reserved
+              @2023 CareerSolution. All Rights Reserved
             </p>
           </div>
         </div>
