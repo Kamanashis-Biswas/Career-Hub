@@ -13,21 +13,31 @@ const AppliedJobs = () => {
         .then((data) => {
           setJobs(allJobs.map((e) => data.find((d) => d.id == e)));
           setJob(allJobs.map((e) => data.find((d) => d.id == e)));
-          console.log(jobs);
         });
     }
   }, []);
 
   return (
     <>
-      <select
-        onChange={(e) => {
-          setJob([...jobs.filter((d) => d.remoteOrOnsite === e.target.value)]);
-        }}
-      >
-        <option value="Remote">Remote</option>
-        <option value="Onsite">Onside</option>
-      </select>
+      <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className="text-right font-semibold text-xl md:mt-32">
+          <label className="mr-1" htmlFor="jobs">
+            Filter by:
+          </label>
+          <select
+            name="jobs"
+            id="jobs"
+            onChange={(e) => {
+              setJob([
+                ...jobs.filter((d) => d.remoteOrOnsite === e.target.value),
+              ]);
+            }}
+          >
+            <option value="Remote">Remote</option>
+            <option value="Onsite">Onside</option>
+          </select>
+        </div>
+      </div>
       <div>{job && job.map((e) => <AppliedJobCard key={e.id} job={e} />)}</div>
     </>
   );
