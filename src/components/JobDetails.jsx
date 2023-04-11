@@ -9,7 +9,7 @@ const JobDetails = () => {
   const [job, setJob] = useState(null);
   useEffect(() => {
     if (jid) {
-      fetch("../../public/job_list.json")
+      fetch("/job_list.json")
         .then((data) => data.json())
         .then((data) => {
           setJob(data.find((e) => e.id === jid));

@@ -6,17 +6,20 @@ import AllJobCard from "./Card/AllJobCard";
 const Home = () => {
   const [jobCList, setJobCList] = useState();
   useEffect(() => {
-    fetch("../../public/job_category_list.json")
+    fetch("job_category_list.json")
       .then((res) => res.json())
       .then((data) => setJobCList(data));
   }, []);
 
   const [jobList, setJobList] = useState();
   useEffect(() => {
-    fetch("../../public/job_list.json")
+    fetch("job_list.json")
       .then((res) => res.json())
       .then((data) => setJobList(data));
   }, []);
+
+  const [btnClick, setBtnClick] = useState(false);
+
   return (
     <div>
       {/* Bannar */}
@@ -70,13 +73,24 @@ const Home = () => {
       </div>
       <div className="px-4 py-5 mx-auto mt-20 md:mt-60 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="grid md:grid-cols-2 gap-4">
-          {jobList &&
-            jobList.map((job) => <AllJobCard key={job.id} job={job} />)}
+          {jobList && !btnClick
+            ? jobList.map((job, i) => {
+                if (i <= 3) return <AllJobCard key={job.id} job={job} />;
+              })
+            : jobList &&
+              jobList.map((job) => <AllJobCard key={job.id} job={job} />)}
         </div>
         <div className="text-center">
-          <button className="bg-indigo-500 w-[190px] h-[65px] font-bold rounded text-white mt-7">
-            See All Jobs
-          </button>
+          {!btnClick ? (
+            <button
+              onClick={() => setBtnClick(true)}
+              className="bg-indigo-500 w-[190px] h-[65px] font-bold rounded text-white mt-7"
+            >
+              See All Jobs
+            </button>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>

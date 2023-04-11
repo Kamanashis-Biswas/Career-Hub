@@ -34,8 +34,19 @@ const AllJobCard = ({ job }) => {
             {fulltimeOrParttime}
           </p>
         </div>
-        <p className="ml-10 mt-4 text-gray-500 font-semibold text-[20px]">
-          {location} <span className="ml-6">Salary : {salary}</span>
+        <p className="flex ml-10 mt-4 text-gray-500 font-semibold text-[20px]">
+          <img
+            className="mr-2"
+            src="https://i.ibb.co/GFWxskj/location-2.png"
+            alt=""
+          />
+          <span>{location}</span>{" "}
+          <img
+            className="ml-6"
+            src="https://i.ibb.co/M1WhDjy/doller.png"
+            alt=""
+          />
+          <span className="ml-2">Salary : {salary}</span>
         </p>
         <button
           onClick={() => navigate(`/details/${job.id}`)}
