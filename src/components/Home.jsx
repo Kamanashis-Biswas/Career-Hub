@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import JobCategoryCard from "./Card/JobCategoryCard";
-import manImg from "../assets/All_Images/P3OLGJ1.png";
 import AllJobCard from "./Card/AllJobCard";
 
 const Home = () => {
@@ -32,7 +31,11 @@ const Home = () => {
             </button>
           </div>
           <div className="md:w-1/2">
-            <img className="h-full" src={manImg} alt="image" />
+            <img
+              className="h-full"
+              src="https://i.ibb.co/wzwyR8h/manLogo.png"
+              alt="image"
+            />
           </div>
         </div>
       </div>
@@ -59,7 +62,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="px-4 py-5 mx-auto mt-60 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div className="px-4 py-5 mx-auto mt-20 md:mt-60 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="grid md:grid-cols-2 gap-4">
           {jobList &&
             jobList.map((job) => <AllJobCard key={job.id} job={job} />)}

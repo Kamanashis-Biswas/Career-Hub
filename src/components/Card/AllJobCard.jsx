@@ -15,7 +15,7 @@ const AllJobCard = ({ job }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="">
+    <div>
       <div className="border rounded-xl">
         <img
           className="w-[116px] h-[40px] mt-10 ml-10"

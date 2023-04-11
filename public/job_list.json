@@ -1,7 +1,7 @@
 [
   {
     "id": "job001",
-    "companyLogo": "Icons/google.png",
+    "companyLogo": "https://i.ibb.co/6B1sHZY/google.png",
     "jobTitle": "Technical Database Engineer",
     "companyName": "Google LLC",
     "remoteOrOnsite": "Remote",
@@ -19,7 +19,7 @@
   },
   {
     "id": "job002",
-    "companyLogo": "Icons/netflix.png",
+    "companyLogo": "https://i.ibb.co/K05RSHS/netflix.png",
     "jobTitle": "Senior Product Designer",
     "companyName": "Netflix",
     "remoteOrOnsite": "Onsite",
@@ -37,7 +37,7 @@
   },
   {
     "id": "job003",
-    "companyLogo": "Icons/tesla.png",
+    "companyLogo": "https://i.ibb.co/Rz2pbK6/tesla.png",
     "jobTitle": "Software Engineer",
     "companyName": "Tesla",
     "remoteOrOnsite": "Remote",
@@ -55,7 +55,7 @@
   },
   {
     "id": "job004",
-    "companyLogo": "Icons/google.png",
+    "companyLogo": "https://i.ibb.co/6B1sHZY/google.png",
     "jobTitle": "Marketing Manager",
     "companyName": "Google LLC",
     "remoteOrOnsite": "Onsite",
@@ -73,9 +73,9 @@
   },
   {
     "id": "job005",
-    "companyLogo": "Icons/microsoft.png",
+    "companyLogo": "https://i.ibb.co/sPzc6WL/airbnb.png",
     "jobTitle": "Data Scientist",
-    "companyName": "Microsoft Corporation",
+    "companyName": "Airbnb",
     "remoteOrOnsite": "Onsite",
     "location": "San Francisco, CA",
     "fulltimeOrParttime": "Full-time",
@@ -91,7 +91,7 @@
   },
   {
     "id": "job006",
-    "companyLogo": "Icons/alibaba.png",
+    "companyLogo": "https://i.ibb.co/zScNFTX/alibaba.png",
     "jobTitle": "Product Manager",
     "companyName": "Alibaba Group",
     "remoteOrOnsite": "Onsite",
