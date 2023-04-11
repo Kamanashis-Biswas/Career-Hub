@@ -11,6 +11,8 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
+  Pie,
+  PieChart,
 } from "recharts";
 
 const Statistics = () => {
@@ -61,24 +63,20 @@ const Statistics = () => {
       <h2 className="text-center text-2xl font-extrabold mt-6 underline mb-6">
         Assignment Marks Diagram
       </h2>
-      <div>
-        <ComposedChart
-          width={1000}
-          height={400}
-          data={assignmentsMarks}
-          margin={{
-            top: 20,
-            right: 20,
-            bottom: 20,
-            left: 20,
-          }}
-        >
-          <XAxis dataKey="name" scale="band" />
-          <YAxis />
+      <div className="flex justify-center">
+        <PieChart width={400} height={400}>
+          <Pie
+            dataKey="marks"
+            isAnimationActive={true}
+            data={assignmentsMarks}
+            cx="50%"
+            cy="50%"
+            outerRadius={80}
+            fill="#8884d8"
+            label
+          />
           <Tooltip />
-          <Bar dataKey="marks" barSize={20} fill="#413ea0" />
-          <Line dataKey="marks" stroke="#ff7300"></Line>
-        </ComposedChart>
+        </PieChart>
       </div>
     </div>
   );
