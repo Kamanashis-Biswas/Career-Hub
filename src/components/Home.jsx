@@ -4,7 +4,13 @@ import JobCategoryCard from "./Card/JobCategoryCard";
 import AllJobCard from "./Card/AllJobCard";
 
 const Home = () => {
-  const jobCategoryList = useLoaderData();
+  const [jobCList, setJobCList] = useState();
+  useEffect(() => {
+    fetch("../../public/job_category_list.json")
+      .then((res) => res.json())
+      .then((data) => setJobCList(data));
+  }, []);
+
   const [jobList, setJobList] = useState();
   useEffect(() => {
     fetch("../../public/job_list.json")
@@ -52,8 +58,8 @@ const Home = () => {
         </div>
         <div>
           <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {jobCategoryList &&
-              jobCategoryList.map((jobCategory) => (
+            {jobCList &&
+              jobCList.map((jobCategory) => (
                 <JobCategoryCard
                   key={jobCategory.id}
                   jobCategory={jobCategory}
