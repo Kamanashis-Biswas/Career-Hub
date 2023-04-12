@@ -27,12 +27,14 @@ const AppliedJobCard = ({ job }) => {
           </div>
           <div className="md:flex justify-between w-full items-center">
             <div>
-              <h2 className="text-2xl font-extrabold mt-8 ml-10">{jobTitle}</h2>
-              <p className="text-gray-500 font-semibold text-xl ml-10 mt-2">
+              <h2 className="text-2xl font-extrabold mt-8 md:ml-10">
+                {jobTitle}
+              </h2>
+              <p className="text-gray-500 font-semibold text-xl md:ml-10 mt-2">
                 {companyName}
               </p>
               <div className="flex">
-                <p className="border text-blue-500 text-center ml-10 rounded py-2 w-[109px] mt-4 font-extrabold border-blue-500">
+                <p className="border text-blue-500 text-center md:ml-10 rounded py-2 w-[109px] mt-4 font-extrabold border-blue-500">
                   {remoteOrOnsite}
                 </p>
                 <p className="border text-blue-500 text-center rounded py-2 ml-4 w-[109px] mt-4 font-extrabold border-blue-500">
@@ -40,7 +42,7 @@ const AppliedJobCard = ({ job }) => {
                 </p>
               </div>
               <div className="md:flex">
-                <div className="ml-10 mt-4 flex">
+                <div className="md:ml-10 mt-4 flex">
                   <img
                     className="mr-2"
                     src="https://i.ibb.co/GFWxskj/location-2.png"
@@ -50,7 +52,7 @@ const AppliedJobCard = ({ job }) => {
                     {location}
                   </span>{" "}
                 </div>
-                <div className="ml-10 mt-4 flex">
+                <div className="md:ml-10 mt-4 flex">
                   <img
                     className="mr-2"
                     src="https://i.ibb.co/M1WhDjy/doller.png"
@@ -65,7 +67,7 @@ const AppliedJobCard = ({ job }) => {
             <div>
               <button
                 onClick={() => navigate(`/details/${job.id}`)}
-                className="w-[157px] h-[50px] ml-10 mt-6 text-white font-semibold bg-blue-500 mb-10 rounded"
+                className="w-[157px] h-[50px] md:ml-10 mt-6 text-white font-semibold bg-blue-500 mb-10 rounded"
               >
                 View Details
               </button>

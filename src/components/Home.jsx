@@ -72,6 +72,15 @@ const Home = () => {
         </div>
       </div>
       <div className="px-4 py-5 mx-auto mt-20 md:mt-60 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div>
+          <h2 className="font-extrabold text-5xl text-center mt-25">
+            Featured Jobs
+          </h2>
+          <p className="text-center mb-8 mt-4 text-gray-500">
+            Explore thousands of job opportunities with all the information you
+            need. Its your future
+          </p>
+        </div>
         <div className="grid md:grid-cols-2 gap-4">
           {jobList && !btnClick
             ? jobList.map((job, i) => {
