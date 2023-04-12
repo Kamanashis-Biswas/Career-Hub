@@ -28,6 +28,7 @@ const Home = () => {
           <div className="md:w-1/2">
             <h2 className="font-extrabold text-[50px] md:text-[80px]">
               One Step Closer To Your
+              <br />
               <span className="text-blue-600">Dream Job</span>
             </h2>
             <p className="text-gray-500">
